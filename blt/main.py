@@ -97,6 +97,9 @@ def main():
         print red('[ERROR]') + ' %s' % e
         exit(1)
 
+    # figure out our environment
+    envtype = determine_envtype()
+
     # user is requesting help on a specific command
     if args.get(0) == 'help':
         # call the commandcenter help method, we skip past index 0 which
@@ -110,7 +113,6 @@ def main():
     elif args.get(0) == 'completion':
         print '\n'.join(sorted(center.commands.keys()))
     else:
-        envtype = determine_envtype()
         cmd = args.pop(0)
         try:
             center.run(envtype, cmd, args.all)

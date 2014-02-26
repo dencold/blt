@@ -5,7 +5,7 @@ except ImportError:
 
 settings = {
     'name': 'blt',
-    'version': '0.2.0',
+    'version': '0.2.1',
     'description': 'blt - provides simple CLI superpowers.',
     'long_description': open('README.md').read(),
     'author': 'Dennis Coldwell',
