@@ -53,26 +53,10 @@ format.  Let's break down the aws run from above:
 
 ## Installation
 
-Currently blt is not on PyPI, so you'll need to build/install from the filesystem. Here are the steps to accomplish this:
-
-#### Clone the blt rep
+blt is available on [PyPi](https://pypi.python.org/pypi/blt) and installable through pip:
 
 ```bash
-git clone git@github.com:pubvest/utils.git
-```
-
-#### Run the sdist directive on setup.py
-
-```bash
-cd utils/blt
-python setup.py sdist
-```
-
-#### Install via pip
-
-```bash
-cd utils/blt/dist
-pip install blt-VERSION.tar.gz
+$ pip install blt
 ```
 
 ## More to come!
