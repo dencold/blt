@@ -13,8 +13,6 @@ import hashlib
 import mimetypes
 import os
 from StringIO import StringIO
-# from jsmin import *
-# from cssmin import *
 
 # boto may not be available before initializing requirements, just ignore
 # the exception in that case.
